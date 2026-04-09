@@ -1,0 +1,71 @@
+# Git Commits Deep Dive 🚀
+
+## Concepts Learned
+
+### 1. Versioning
+
+Each commit represents a version of code
+
+### 2. git log
+
+Shows commit history
+
+### 3. git diff
+
+Shows changes between versions
+
+### 4. git reset --hard
+
+* Deletes commits
+* Deletes code
+* Dangerous
+* Use only in personal work
+
+### 5. git revert
+
+* Safe undo
+* Creates new commit
+* Keeps history intact
+* Used in teams
+
+---
+
+## Reset vs Revert
+
+git reset --hard
+❌ Deletes history
+❌ Not safe for teams
+
+git revert
+✅ Keeps history
+✅ Safe for collaboration
+
+---
+
+## Workflow I Practiced
+
+1. Created Version 1
+2. Created Version 2
+3. Introduced bug in Version 3
+4. Used git reset (unsafe)
+5. Used git revert (safe)
+6. Verified history
+
+---
+
+## Key Understanding
+
+Commits = versions of your project
+
+Never delete shared history
+
+Always use revert in teams
+
+---
+
+## My Learning Outcome
+
+✔ I understand version control
+✔ I can manage project history
+✔ I can safely fix mistakes
+✔ I know reset vs revert difference
