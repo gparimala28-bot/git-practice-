@@ -1,0 +1,56 @@
+Git Basics Notes 🚀
+1. git status
+Shows current state of repository
+Displays:
+Untracked files
+Modified files
+Staged files
+2. git add
+Moves files to staging area
+Example:
+git add filename
+git add .
+3. git commit
+Saves snapshot of changes
+Example:
+git commit -m "message"
+4. git diff
+Shows changes between working directory and last commit
+Helps review before committing
+5. git log
+Shows commit history
+Includes:
+commit id
+author
+message
+6. git restore
+Undo changes in working directory
+Example:
+git restore filename
+7. git rm
+Removes file from Git and system
+Example:
+git rm filename
+
+Workflow I Practiced
+Created file
+Checked status
+Added to staging
+Committed changes
+Modified file
+Viewed diff
+Committed again
+Undid changes
+Deleted file
+Recreated file
+
+Key Understanding
+
+Working Directory → Staging Area → Repository
+
+My Learning Outcome
+
+✔ I understand Git tracking
+✔ I can commit changes safely
+✔ I can undo mistakes
+✔ I can track history
