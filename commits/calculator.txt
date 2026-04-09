@@ -1,2 +1,2 @@
-echo "Addition broken"
+echo "Addition works"
 echo "Subtraction Works"
