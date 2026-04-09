@@ -42,7 +42,7 @@ git revert
 
 ---
 
-## Workflow I Practiced
+## 🔄Workflow I Practiced
 
 1. Created Version 1
 2. Created Version 2
@@ -53,7 +53,7 @@ git revert
 
 ---
 
-## Key Understanding
+## 🧠Key Understanding
 
 Commits = versions of your project
 
@@ -63,7 +63,7 @@ Always use revert in teams
 
 ---
 
-## My Learning Outcome
+##🎯 My Learning Outcome
 
 ✔ I understand version control
 ✔ I can manage project history
