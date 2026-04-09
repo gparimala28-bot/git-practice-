@@ -32,7 +32,7 @@ Removes file from Git and system
 Example:
 git rm filename
 
-Workflow I Practiced
+👉Workflow I Practiced
 Created file
 Checked status
 Added to staging
@@ -44,11 +44,11 @@ Undid changes
 Deleted file
 Recreated file
 
-Key Understanding
+🔄Key Understanding
 
 Working Directory → Staging Area → Repository
 
-My Learning Outcome
+🎯My Learning Outcome
 
 ✔ I understand Git tracking
 ✔ I can commit changes safely
