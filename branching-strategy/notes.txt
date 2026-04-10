@@ -1,0 +1,142 @@
+# 🌿 Git Branching Strategy — Learn by Doing
+
+## 🔹 What is a Branch?
+
+A branch is like creating a safe copy of your project where you can try new things.
+
+Instead of touching the main working code, you:
+👉 create a branch
+👉 work there
+👉 merge later when everything is correct
+
+---
+
+## 🎯 Why I Use Branches 
+
+When I work directly on main:
+
+* I could break the project easily ❌
+* No way to safely test changes ❌
+
+With branches:
+
+* I can experiment safely ✅
+* I don’t affect working code ✅
+* I can fix mistakes before merging ✅
+
+---
+
+## 🏗️ Types of Branches 
+
+### 🔵 main (Production)
+
+This is the **final working version** of the project.
+
+✔ Always stable
+✔ What users actually use
+❌ Never code directly here
+
+👉 I treat this like "DO NOT TOUCH unless releasing"
+
+---
+
+### 🟢 develop (Working Area)
+
+This is where all development happens.
+
+✔ All features come here
+✔ Not fully stable
+✔ Used for integration
+
+👉 Think of this as:
+“Work in progress version”
+
+---
+
+### 🟣 feature/*
+
+Used to build **one specific feature at a time**
+
+Examples:
+
+* feature/percentage
+* feature/exponent
+
+✔ Created from develop
+✔ Merged back into develop
+✔ Deleted after use
+
+👉 What I learned:
+“1 branch = 1 feature only”
+
+---
+
+### 🟡 release/*
+
+Used when features are done and we want to prepare for production
+
+✔ Created from develop
+✔ Only bug fixes allowed
+✔ No new features
+
+👉 This is like:
+“Final checking stage before going live”
+
+---
+
+### 🔴 hotfix/*
+
+Used when something breaks in production
+
+✔ Created from main
+✔ Fixed quickly
+✔ Merged into BOTH main and develop
+
+## 🔄 Hands-on Practice I Performed
+
+I practiced a complete Git branching workflow:
+
+Created develop branch from main
+Created feature branches:
+feature/percentage
+feature/exponent
+Merged features into develop
+Created release branch (release/v1.0)
+Merged release into main
+Tagged version v1.0
+Simulated production bug
+Created hotfix branch
+Merged hotfix into both main and develop
+feature → develop → release → main → hotfix
+
+👉 This helped me understand real-world Git workflow used in teams.
+
+## 🧠 Key Things I Understood
+
+✔ Never work directly on main
+✔ Always create branches
+✔ Keep work small and focused
+✔ Merge carefully
+✔ Delete branches after use
+
+---
+
+
+## 🏁 Final Understanding 
+
+Branching helps me:
+
+* Work safely
+* Stay organized
+* Avoid breaking code
+* Follow real company workflow
+
+👉 It feels like:
+“I’m building features in isolation and only adding them when they’re ready”
+
+
+## 💡 Personal Note
+
+When I practiced this:
+I understood that Git is not just commands —
+👉 it’s a workflow system to manage real projects safely
