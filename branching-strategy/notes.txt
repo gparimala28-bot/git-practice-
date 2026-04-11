@@ -1,142 +1,79 @@
-# 🌿 Git Branching Strategy — Learn by Doing
+🌿 Git Branching Strategy — Quick Notes
+🔹 What is a Branch?
 
-## 🔹 What is a Branch?
+A branch is a safe copy of the project where I can work without breaking main.
 
-A branch is like creating a safe copy of your project where you can try new things.
+👉 Work → test → merge later
 
-Instead of touching the main working code, you:
-👉 create a branch
-👉 work there
-👉 merge later when everything is correct
-
----
-
-## 🎯 Why I Use Branches 
-
-When I work directly on main:
-
-* I could break the project easily ❌
-* No way to safely test changes ❌
+🎯 Why I Use Branches
+Working on main is risky ❌
+No safe way to test ❌
 
 With branches:
 
-* I can experiment safely ✅
-* I don’t affect working code ✅
-* I can fix mistakes before merging ✅
+✔ Safe experimentation
+✔ No impact on main
+✔ Can fix mistakes before merging
 
----
+🏗️ Types of Branches
+🔵 main
+Final working version
+Always stable
+Never code directly
 
-## 🏗️ Types of Branches 
+👉 Used for production
 
-### 🔵 main (Production)
+🟢 develop
+Main working branch
+All features come here
+Not fully stable
 
-This is the **final working version** of the project.
+👉 Work-in-progress version
 
-✔ Always stable
-✔ What users actually use
-❌ Never code directly here
+🟣 feature/*
+One feature per branch
+Created from develop
+Merged back to develop
 
-👉 I treat this like "DO NOT TOUCH unless releasing"
+👉 “1 branch = 1 feature”
 
----
+🟡 release/*
+Prepare for production
+Only bug fixes allowed
+No new features
 
-### 🟢 develop (Working Area)
+👉 Final testing stage
 
-This is where all development happens.
+🔴 hotfix/*
+Fix production issues
+Created from main
+Merged into main + develop
 
-✔ All features come here
-✔ Not fully stable
-✔ Used for integration
-
-👉 Think of this as:
-“Work in progress version”
-
----
-
-### 🟣 feature/*
-
-Used to build **one specific feature at a time**
-
-Examples:
-
-* feature/percentage
-* feature/exponent
-
-✔ Created from develop
-✔ Merged back into develop
-✔ Deleted after use
-
-👉 What I learned:
-“1 branch = 1 feature only”
-
----
-
-### 🟡 release/*
-
-Used when features are done and we want to prepare for production
-
-✔ Created from develop
-✔ Only bug fixes allowed
-✔ No new features
-
-👉 This is like:
-“Final checking stage before going live”
-
----
-
-### 🔴 hotfix/*
-
-Used when something breaks in production
-
-✔ Created from main
-✔ Fixed quickly
-✔ Merged into BOTH main and develop
+👉 Emergency fixes
 
 ## 🔄 Hands-on Practice I Performed
 
-I practiced a complete Git branching workflow:
-
-Created develop branch from main
-Created feature branches:
-feature/percentage
-feature/exponent
+Created develop from main
+Created feature branches
 Merged features into develop
-Created release branch (release/v1.0)
-Merged release into main
-Tagged version v1.0
-Simulated production bug
-Created hotfix branch
-Merged hotfix into both main and develop
-feature → develop → release → main → hotfix
+Created release branch
+Merged into main
+Created hotfix and merged
 
-👉 This helped me understand real-world Git workflow used in teams.
+🧠 What I Learned
 
-## 🧠 Key Things I Understood
-
-✔ Never work directly on main
-✔ Always create branches
-✔ Keep work small and focused
-✔ Merge carefully
+✔ Never work on main directly
+✔ Always use branches
+✔ Keep features small
 ✔ Delete branches after use
 
----
-
-
-## 🏁 Final Understanding 
+🏁 Final Understanding
 
 Branching helps me:
 
-* Work safely
-* Stay organized
-* Avoid breaking code
-* Follow real company workflow
+Work safely
+Stay organized
+Avoid breaking code
 
-👉 It feels like:
-“I’m building features in isolation and only adding them when they’re ready”
-
-
-## 💡 Personal Note
-
-When I practiced this:
-I understood that Git is not just commands —
-👉 it’s a workflow system to manage real projects safely
+👉 Feels like:
+“I build features separately and merge only when ready”
