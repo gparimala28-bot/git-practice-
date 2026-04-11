@@ -1,0 +1,50 @@
+Git Merge vs Rebase — Quick Notes
+🔹 Why I Learned This
+
+When multiple branches and main change at the same time,
+👉 I needed a way to combine everything safely
+
+🧪 What I Did
+Created a base project
+Made two branches:
+feature/merge-example
+feature/rebase-example
+Added different code in both
+Updated main to simulate real scenario
+🔀 Merge
+git checkout main
+git merge feature/merge-example
+
+What Happened
+Got conflict
+Fixed it manually
+Created a merge commit
+What I Learned
+
+✔ Keeps full history
+✔ Safe
+❌ History looks messy
+
+🔁 Rebase
+git checkout feature/rebase-example
+git rebase main
+
+What Happened
+Got conflict
+Fixed it
+Used git rebase --continue
+What I Learned
+
+✔ Clean history
+✔ No extra commit
+❌ Rewrites history
+
+🔄 Difference
+Merge → safe but messy (good for teams)  
+Rebase → clean but risky (good for personal work)
+
+🧠 Final Learning
+
+✔ Conflicts are normal - not errors
+✔ Git needs manual decisions
+✔ Both merge and rebase are useful
