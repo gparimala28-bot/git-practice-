@@ -1,0 +1,49 @@
+🔀 Pull Request Workflow — Hands-on
+🔹 Objective
+
+Learn and simulate a real-world Git workflow using feature branching, pull requests, and controlled merges.
+
+🧪 Implementation
+Initialized project on main branch
+Created and managed a develop branch for staging
+Developed a feature using feature/login-page branch
+Implemented a basic login UI (HTML inputs)
+Committed and pushed changes to remote repository
+Created and managed a Pull Request (PR) from feature → develop
+Simulated code review process with comments and feedback
+Merged PR into develop and synchronized changes to main
+🌿 Workflow Followed
+
+Feature Branch → Develop → Main
+
+Isolated feature development using dedicated branch
+Used PRs for controlled integration into develop
+Promoted stable code from develop to main
+⚠️ Issue Encountered
+
+Problem:
+git merge develop showed "Already up to date", but changes were missing in main
+
+🔍 Root Cause
+Local develop branch was outdated
+Remote (origin/develop) contained the latest merged PR changes
+Merge used stale local branch instead of updated remote state
+✅ Resolution
+Synced local branch with remote:
+git checkout develop
+git pull origin develop
+Successfully merged updated develop into main
+Pushed final changes to remote repository
+🧠 Key Learnings
+Importance of syncing local and remote branches before merging
+Understanding difference between local vs remote state
+Practical use of Pull Requests for collaboration and code review
+Role of develop as a staging environment
+Real-world Git workflow: feature → develop → main
+🔥 Key Takeaway
+
+Effective Git workflows require:
+
+Proper branch strategy
+Regular synchronization (pull)
+Controlled integration using Pull Requests
