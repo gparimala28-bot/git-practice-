@@ -1,0 +1,32 @@
+📦 Node + DevOps + Git Workflow Project
+
+🔹 Project Summary
+Built a basic Node.js API and implemented a real-world Git workflow using feature branches, pull requests, and merge conflict resolution.
+
+🧪 What I Did
+
+Created a Node.js project using Express
+Built a simple API with a login endpoint
+Used Git for version control with multiple branches (main, develop, feature)
+Followed feature → develop → main workflow
+Created and merged Pull Requests
+Simulated and resolved merge conflicts 
+Used .gitignore and managed dependencies properly
+
+⚠️ Challenges Faced
+
+Worked on outdated branch without pulling latest changes
+
+🧠 What I Learned
+
+How real-world Git workflows work in teams
+Importance of Pull Requests for safe code merging
+How to resolve merge conflicts confidently
+Difference between local and remote branches
+Importance of keeping branches updated (git pull)
+Basic DevOps mindset (structured workflow, clean code management)
+
+🚀 Why This Project Matters
+
+This project helped me understand how developers collaborate in real environments, not just writing code but managing it efficiently using Git and DevOps practices.
+
