@@ -4,7 +4,8 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("API is live 🔥");
+  res.send(("Welcome to DevOps API 🚀");
+
 });
 
 app.post("/login", (req, res) => {
