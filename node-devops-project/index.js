@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.send("API is live 🔥");
 });
 
 app.post("/login", (req, res) => {
