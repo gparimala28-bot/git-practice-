@@ -2,7 +2,6 @@
 
 This repository showcases my **hands-on experience with Git**, focusing on real-world workflows and collaborative development practices.
 
----
 
 ## 📌 Highlights
 
@@ -11,8 +10,6 @@ This repository showcases my **hands-on experience with Git**, focusing on real-
 * Resolved **real-world merge conflicts**
 * Managed **local vs remote synchronization issues**
 * Maintained clean and structured commit history
-
----
 
 ## 💥 Node DevOps Practice Project
 
@@ -23,9 +20,7 @@ Built a simple Node.js application using Express.js to simulate real development
 * Feature-based development (`feature → develop → main`)
 * Pull Request workflow using GitHub
 * Conflict creation and resolution (local + UI)
-* Safe code promotion from develop to main
-
----
+* Safe code promotion from develop to main   
 
 ## 🔄 Workflow Used
 
@@ -33,15 +28,12 @@ Built a simple Node.js application using Express.js to simulate real development
 feature → develop → main
 ```
 
----
-
 ## ⚠️ Real Issue Solved
 
 * Fixed "Already up to date" issue
 * Synced branches using `git pull`
 * Understood difference between local and remote state
 
----
 
 ## 🧠 Key Takeaways
 
@@ -64,6 +56,8 @@ feature → develop → main
 ## 🎯 Outcome
 
 ✔ Strong understanding of Git workflows
+
 ✔ Hands-on experience with real-world scenarios
+
 ✔ Confidence in handling version control in team environments
 
